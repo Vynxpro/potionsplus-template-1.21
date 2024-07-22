@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "potionsplus",
+	"version": "${version}",
+	"name": "PotionsPlus",
+	"description": "A mod that completely overhauls the potion system and includes 2 new enchantments and 4 new potion effects",
+	"authors": [
+		"Vyom Saxena"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/potionsplus/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.vyom.potionsplus.PotionsPlus"
+		],
+		"client": [
+			"net.vyom.potionsplus.PotionsPlusClient"
+		],
+		"fabric-datagen": [
+			"net.vyom.potionsplus.PotionsPlusDataGenerator"
+		]
+	},
+	"mixins": [
+		"potionsplus.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
